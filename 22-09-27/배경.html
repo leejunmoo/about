@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경</title>
+    <style>
+        body {
+            background-color: lightblue;
+            /* background-image: url('pink-flowers.webp'); */
+        }
+        .content {
+            background-color: bisque;
+            padding: 20px;
+            border: 1px solid black;
+            /* clip->배경채우는 범위 설정 */
+            background-clip: border-box;
+            background-clip: padding-box;
+            background-clip: content-box;
+        }
+        p {
+            line-height: 24px;
+        }
+        .bg {
+            background-color: #fff;
+            width: 500px;
+            height: 400px;
+            background-image: url('more-leaves.png');
+        }
+        .bg-repeat {
+            background-color: gray;
+            height: 500px;
+            background-image: url('포켓몬.jfif');
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: 400px 400px;
+            background-size: 100% 100%;
+            background-size: contain;
+            background-size: cover;
+        }
+        .bg-position {
+            height: 400px;
+            background-color: lightgray;
+            background-image: url('포켓몬.jfif');
+            background-repeat: no-repeat;
+            /* background-position 배경위치  x | y /or/ right top / left bottom 이런식가능 */
+            background-position:right top;
+            background-position:100px 80px;
+        }
+
+        /* background-repeat 값
+                repeat 반복->기본값
+                repeat-x 가로 반복
+                repeat-y 세로 반복
+                no-repeat 반복x */
+
+        /* background-size 크기
+                width | height 
+                contain 자동채우기
+                cover 자동채우기(crop)->잘려도 가득 채우기*/
+        #btn {
+            width:120px;
+            height: 40px;
+            background-image: url('icons8_idea.png');
+            background-repeat: no-repeat;
+            background-position: 5px 5px;
+            background-color: skyblue;
+            color: #fff;
+        }
+        #btn2 {
+            width: 120px;
+            height: 40px;
+            background-image: url('icons8_idea.png');
+            background-repeat: no-repeat;
+            background-color: slateblue;
+            background-position: right center;
+        }
+        .parallax {
+            height: 500px;
+            background-color: #ccc;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* 배경고정 */
+            background-attachment: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>콘텐츠 영역</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aliquid velit quis architecto vel beatae consectetur, nobis tenetur necessitatibus atque, voluptatibus ullam quae maiores. Iusto provident voluptas cupiditate officia necessitatibus!</p>
+    </div>
+
+    <div class="bg">
+        <h1>background-image 배경 이미지</h1>
+    </div>
+
+    <div class="bg-repeat">
+        <h1>background-repeat 배경 반복 설정</h1>
+    </div>
+
+    <div class="parallax">
+        <h1>background-attachemnt 배경 고정</h1>
+    </div>
+
+    <div class="bg-position">
+        <h1>background-position 배경 위치</h1>
+    </div>
+
+    <button id="btn">IDEA</button>
+    <button id="btn2">IDEA</button>
+</body>
+</html>
