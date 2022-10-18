@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.container {
+    /* background-color: #ccc; */
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+header {
+    position: relative;
+}
+
+header h1 {
+   position: absolute;
+   top: 10px;
+   left: 40px;
+}
+
+nav>ul>li {
+    /* display: inline-block; */
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav>ul {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: flex;
+}
+
+.container section {
+    width: 25%;
+    height: 100%;
+    outline: 1px solid black;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.eco_icon,  .solar_icon, .water_icon, .example_icon {
+    position: absolute;
+    top: calc(50% - 75px);
+    width: 100%;
+}
+
+div h1 {
+    margin-top: 20px; 
+    color: #fff;
+    font-size: 32px;
+}
+
+.eco {
+    background-image: url(./images/신재생에너지bg.jpg);
+}
+
+.solar {
+    background-image: url(./images/육상태양광bg.jpg);
+}
+
+.water {
+    background-image: url(./images/수상태양광bg.jpg);
+}
+
+.example {
+    background-image: url(./images/구축사례bg.jpg);
+}
+
+header {
+    z-index: 1;
+}
+
+.container section {
+    filter: grayscale(70%);
+}
+
+.container section:hover {
+    filter: grayscale(0%);
+}
+
+.container ul:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.deth {
+    display: none;
+}
+
+nav>ul:hover .deth{
+    display: block;
+}
+
+nav>ul:hover .deth a {
+    color:#000
+}
+
+nav>ul:hover .deth li {
+    margin-bottom: 10px;
+}
+
+
