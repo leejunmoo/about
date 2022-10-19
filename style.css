@@ -1,129 +1,109 @@
+/* style.css */
+/* 스타일 변수 선언 */
+/* root = 모든문서의 전체상위선택자 최고봉 저기안에스타일넣는순간 무조건 쟤만 적용 */
+/* root 에 변수선언하는건 선언해놓고 나중에 꺼내쓰겠다
+    전역변수 선언 */
+:root {
+    --main-color: #1abc9c;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+ul {
+    list-style-type: none;
 }
 
 body {
-    font-family: "Nanum Gothic", sans-serif;
-}
-
-.container {
-    /* background-color: #ccc; */
-    width: 100%;
-    height: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-a:visited{
-    color: #fff;
-}
-
-nav ul li {
-    list-style: none;
+    font-family: 'Roboto', '맑은 고딕', 'sans-serif';
 }
 
 header {
-    position: relative;
+    background: #ccc;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header h1 {
-   position: absolute;
-   top: 10px;
-   left: 40px;
+    background: var(--main-color);
+    color: #fff;
+    padding: 11px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
 }
 
-nav>ul>li {
-    /* display: inline-block; */
-    margin-left: 30px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-nav>ul {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+header > nav {
     display: flex;
 }
 
-.container section {
-    width: 25%;
-    height: 100%;
-    outline: 1px solid black;
-    float: left;
+header > nav > a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    /* outline: 1px solid #000; */
+    padding: 10px;
+    flex: 1;
     text-align: center;
-    position: relative;
-    background-repeat: no-repeat;
+    background-color: var(--main-color);
 }
 
-.eco_icon,  .solar_icon, .water_icon, .example_icon {
-    position: absolute;
-    top: calc(50% - 75px);
+header > nav > a:hover,
+header > nav > a:active {
+    border-bottom: 3px solid #fff;
+}
+
+main {
+    padding: 20px 15px;
+}
+
+main ul li {
+    margin-bottom: 20px;
+}
+
+main ul li img {
     width: 100%;
 }
 
-div h1 {
-    margin-top: 20px; 
+main .pet-list { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .pet-list .item {
+    /* 여백이들어간 칼럼의 크기 = 칼럼크기 - (여백 / 칼럼수) */
+    width: calc(50% - (15px/2));
+    margin-right: 15px;
+}
+
+main .pet-list .item:nth-child(2n) {
+    margin-right: 0px;
+}
+/* 사진에 이름 배치 */
+main .pet-list .item {
+    position: relative;
+}
+
+main h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main .pet-list .item .name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
     color: #fff;
-    font-size: 32px;
-}
-
-.eco {
-    background-image: url(./images/신재생에너지bg.jpg);
-}
-
-.solar {
-    background-image: url(./images/육상태양광bg.jpg);
-}
-
-.water {
-    background-image: url(./images/수상태양광bg.jpg);
-}
-
-.example {
-    background-image: url(./images/구축사례bg.jpg);
-}
-
-header {
-    z-index: 1;
-}
-
-.container section {
-    filter: grayscale(70%);
-}
-
-.container section:hover {
-    filter: grayscale(0%);
-}
-
-.container ul:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
 
 }
 
-.deth {
-    display: none;
+main .pet-list .item img {
+    display: flex;
 }
-
-nav>ul:hover .deth{
-    display: block;
-}
-
-nav>ul:hover .deth a {
-    color:#000
-}
-
-nav>ul:hover .deth li {
-    margin-bottom: 10px;
-}
-
-
