@@ -35,8 +35,8 @@ header nav a {
     flex-direction: column;
     justify-self: center;
 }
-
-main .container article {    
+main .container article {
+    
     border: 1px solid #ccc;
     background: #fff;
     padding: 40px;
