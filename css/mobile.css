@@ -35,3 +35,17 @@ header nav a {
     flex-direction: column;
     justify-self: center;
 }
+
+main .container article {    
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main .container article:last-child {
+    background-color: #efefef;
+}

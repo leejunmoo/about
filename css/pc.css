@@ -33,3 +33,28 @@ header nav a {
     background-size: cover;
     color: #fff; 
 }
+
+main .container {
+    display: flex;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+main .container article {
+    width: 50%;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+main .container article:last-child {
+    background-color: #efefef;
+}
+
