@@ -1,0 +1,35 @@
+/* pc.css */
+
+body {
+    background-color: lightcoral;
+}
+
+header {
+    background-color: #000;
+    /* 보통 한계점을 잡음 언제까지 늘어날것인가
+    잡은경우는 마진값주고 중앙정렬이 기본 */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header nav {
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+#main-title {
+    background-color: #999;
+    height: 400px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url(../images/title-bg.jpg);
+    background-size: cover;
+    color: #fff; 
+}

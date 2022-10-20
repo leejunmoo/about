@@ -3,51 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>동물정보</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>반응형 홈페이지</title>
+    <link rel="stylesheet" href="./css/default.css"> <!-- 공통css -->
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 767px"><!-- mobile css -->
+    <link rel="stylesheet" href="./css/pc.css" media="screen and (min-width: 768px"><!-- pc css -->
 </head>
 <body>
     <header>
-        <h1>동물정보</h1>
         <nav>
-            <a class="active" href="index.html">강아지</a>
-            <a href="cat.html">고양이</a>
-            <a href="bird.html">새</a>
+            <a href="#">카페소개</a>
+            <a href="#">오시는 길</a>
+            <a href="#">이달의 추천</a>
         </nav>
     </header>
 
-    <main class="contents">
-        <div class="contents-box">
-            <h2>강아지</h2>
-            <ul class="pet-list">
-                <li class="item">
-                    <img src="./images/dog01.jpg" alt="dog01">
-                    <p class="name">초롱이</p>
-                </li>
-                <li class="item">
-                    <img src="./images/dog02.jpg" alt="dog02">
-                    <p class="name">땡칠이</p>
-                </li>
-                <li class="item">
-                    <img src="./images/dog03.jpg" alt="dog02">
-                    <p class="name">칠칠이</p>
-                </li>
-                <li class="item">
-                    <img src="./images/dog04.jpg" alt="dog02">
-                    <p class="name">순둥이</p>
-                </li>
-                <li class="item">
-                    <img src="./images/dog05.jpg" alt="dog02">
-                    <p class="name">문둥이</p>
-                </li>
-                <li class="item">
-                    <img src="./images/dog06.jpg" alt="dog02">
-                    <p class="name">코코</p>
-                </li>
-        </ul>
+    <div id="main-title">
+        <div class="title-group">
+            <h1>멋진 카페</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, rem possimus. Magni officiis</p>
         </div>
-        
-    </main>
+        <a href="#" class="detail-btn">자세히보기</a>
+    </div>
 </body>
 </html>

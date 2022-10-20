@@ -1,0 +1,26 @@
+/* default.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.detail-btn {
+    background-color: #fff;
+    padding: 8px 20px;
+    color: #000;
+}
+
+.title-group {
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px #000;
+}
