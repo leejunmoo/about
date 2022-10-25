@@ -77,7 +77,7 @@ setInterval(function(){
                 }
             } 
         }
-        } else if( dgh = 12) {
+        } else if( dgh == 12) {
             if (dgm < 10){
                 dgh = `${dgh}`;
                 dgm = `${dgm}`;
