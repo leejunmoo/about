@@ -80,7 +80,7 @@ setInterval(function(){
         } else if( dgh = 12) {
             if (dgm < 10){
                 dgh = `${dgh}`;
-                dgm = `0${dmg}`;
+                dgm = `${dgm}`;
                 after = 'PM';
             } else if ( dgh = 12) {
                 if (dgm > 10) {
