@@ -1,0 +1,55 @@
+/* 디지털시계.css */
+
+.digitel-box {
+    outline: 20px solid black;
+    border-radius: 25px;
+    width: 300px;
+    height: 200px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 메인박스 */
+.digitel-content {
+    width: 280px;
+    height: 180px;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+/* 디지털시계 위에 선 */
+.line {
+    width: 220px;
+    height: 14px;
+    background-color: black;
+    margin-left: 135px;
+    margin-bottom: 30px;
+}
+/* 디지털시계 전체감싼거 */
+.box {
+    margin-bottom: 20px;
+}
+
+#digitelhours, #digitelmin, .semi {
+    font-size: 90px;
+}
+
+.digitel-content #pm {
+    font-size: 30px;
+}
+/* 시계중앙선 */
+.bottom-line {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 10px;
+    background-color: #fff ;
+}
+
+.bottom-content {
+    letter-spacing: 3px;
+}
+
+

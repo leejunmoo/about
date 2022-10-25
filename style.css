@@ -1,11 +1,4 @@
 /* style.css */
-/* 스타일 변수 선언 */
-/* root = 모든문서의 전체상위선택자 최고봉 저기안에스타일넣는순간 무조건 쟤만 적용 */
-/* root 에 변수선언하는건 선언해놓고 나중에 꺼내쓰겠다
-    전역변수 선언 */
-:root {
-    --main-color: #1abc9c;
-}
 
 * {
     margin: 0;
@@ -13,102 +6,74 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
 body {
-    font-family: 'Roboto', '맑은 고딕', 'sans-serif';
-}
-
-header {
-    background: #ccc;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-header h1 {
-    background: var(--main-color);
-    color: #fff;
-    padding: 11px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 24px;
-}
-
-header > nav {
+    font-size: 10px;
+    height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header > nav > a {
-    display: block;
-    text-decoration: none;
+#clock {
+    border: 10px solid #ccc;
+    width: 220px;
+    height: 270px;
+    border-radius: 5px;
+}
+
+.watch-box {
+    background-color: #000;
     color: #fff;
-    /* outline: 1px solid #000; */
-    padding: 10px;
-    flex: 1;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    text-align: right;
+    padding-top: 19px;
+    padding-right: 7px;
+}
+
+.day-box #day {
+    font-size: 12px;
+}
+
+.day-box #date {
+    font-size: 15px;
+}
+
+.time-box, .time-box #hours, .time-box #min {
+    font-size: 30px;
+}
+
+.weather-info {
+    display: inline-block;
+    /* outline: 1px solid #fff; */
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+img {
+    width: 24px;
+}
+
+.temp, .time-info {
     text-align: center;
-    background-color: var(--main-color);
 }
 
-header > nav > a:hover,
-header > nav > a:active {
-    border-bottom: 3px solid #fff;
+.walk {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 7px;
 }
 
-header > nav a.active {
-    border-bottom: 3px solid #fff;
+.kakao, .mail {
+    width: 30px;
+    text-align: left;
+    margin-left: 7px;
+    margin-top: 17px;
 }
 
-main {
-    padding: 20px 15px;
+.icon {
+    float: left;
+    margin-top: 8px;
 }
-
-main ul li {
-    margin-bottom: 20px;
-}
-
-main ul li img {
-    width: 100%;
-}
-
-main .pet-list { 
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .pet-list .item {
-    /* 여백이들어간 칼럼의 크기 = 칼럼크기 - (여백 / 칼럼수) */
-    width: calc(50% - (15px/2));
-    margin-right: 15px;
-}
-/* 우측 마진 제거 (짝수번호로 오는것만) */
-main .pet-list .item:nth-child(2n) {
-    margin-right: 0px;
-}
-/* 사진에 이름 배치 */
-main .pet-list .item {
-    position: relative;
-}
-
-main h2 {
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-main .pet-list .item .name {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-
-}
-
-main .pet-list .item img {
-    display: flex;
-}
-
