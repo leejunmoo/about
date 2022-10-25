@@ -77,19 +77,19 @@ setInterval(function(){
                 }
             } 
         }
-        } else if( dgh < 12) {
+        } else if( dgh = 12) {
             if (dgm < 10){
-                dgh = `0${dgh}`;
+                dgh = `${dgh}`;
                 dgm = `0${dmg}`;
-                after = 'AM';
-            } else if ( dgh < 12) {
+                after = 'PM';
+            } else if ( dgh = 12) {
                 if (dgm > 10) {
-                    dgh = `0${dgh}`;
+                    dgh = `${dgh}`;
                     dgm = `${dgm}`;
-                    after = 'AM';
+                    after = 'PM';
                 }
             }
-         dgh = `${dgh = 12 ? `${dgh}`:`${dgh}`}`;
+        // dgh = `${dgh = 12 ? `${dgh}`:`${dgh}`}`;
        //dgm = `${dgm < 10 ? after=`AM`:after=`AM`}`;
    } 
 
