@@ -3,111 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>디지털시계 과제</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./digitelstyle.css">
+    <title>숙명여대 무용과</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- 내 자바스크립트 순서지키기 꼭 쿼리가 먼저와야함 -->
+    <script src="./js/main.js"></script>
 </head>
-<body><!-- 10/7 날씨정보 참고 -->
-    <div id="clock"><!-- 워치시안 -->
-        <div class="watch-box">
-            <!-- 자주쓰는 아이콘 -->
-            <div class="icon">
-                <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk"><img src="./images/kakao_icon.png" alt="kakao" class="kakao"></a>
-                <a href="https:www.gmail.com"><img src="./images/mail_icon.png" alt="mail" class="mail"></a>
-            </div>
-            
-            <div class="day-box">
-                <span id="date">날짜</span>
-                <span id="day">(요일)</span>
-            </div>
-            <div class="time-box">
-                <span id="hours">00</span>:<span id="min">00</span>
-            </div>
-            <!-- 날씨 정보 -->
-            <div class="weather-info">
-                <div class="temp">
-                    <span>8&deg;</span>
-                </div>
-                <div class="icon">
-                    <img src="./images/해.svg" alt="맑음">
-                </div>
-                <div class="time-info">
-                    <span>지금</span>
-                </div>
-            </div>
-            <div class="weather-info">
-                <div class="temp">
-                    <span>10&deg;</span>
-                </div>
-                <div class="icon">
-                    <img src="./images/해.svg" alt="맑음">
-                </div>
-                <div class="time-info">
-                    <span id="hours2">17시</span>
-                </div>
-            </div>
-            <div class="weather-info">
-                <div class="temp">
-                    <span>13&deg;</span>
-                </div>
-                <div class="icon">
-                    <img src="./images/흐림.svg" alt="흐림">
-                </div>
-                <div class="time-info">
-                    <span id="hours3">00시</span>
-                </div>
-            </div>
-            <div class="weather-info">
-                <div class="temp">
-                    <span>15&deg;</span>
-                </div>
-                <div class="icon">
-                    <img src="./images/비.svg" alt="비">
-                </div>
-                <div class="time-info">
-                    <span id="hours4">00시</span>
-                </div>
-            </div>
-            <div class="weather-info">
-                <div class="temp">
-                    <span>9&deg;</span>
-                </div>
-                <div class="icon">
-                    <img src="./images/눈.svg" alt="눈">
-                </div>
-                <div class="time-info">
-                    <span id="hours5">17시</span>
-                </div>
-            </div>
-            <!-- 할일 알림 -->
-            <div class="walk">
-                <span id="day2">(요일)</span> <span></span>09:00~18:00<br>
-                학원수업</span>
-            </div>
-        </div>
-    </div>
-    <div class="box"><!-- 디지털시계 -->
-        <div class="line"></div> <!-- 시계위에 선 -->
-        <div class="digitel">
-            <div class="digitel-box">
-                <div class="digitel-content">
-                    <span id="digitelhours">00</span><span class="semi">:</span><span id="digitelmin">00</span><span id="pm">pm</span>
-                    <!-- 시계중앙선 -->
-                    <div class="bottom-line"></div>
-                    <div class="bottom-content"><!-- 달,요일 -->
-                        <span id="digitelmon">월</span>.<span id="digiteldate">날짜</span>
-                        <span id="digitelday">요일</span>
-                        <img src="./images/날씨아이콘.png"          alt="날씨아이콘">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <script src="./digitel.js"></script>
-    <script src="./app.js"></script>
+<body>
     
 </body>
 </html>
-<!-- 남은거 js 이용해서 시간,날짜 집어넣기 -->
-<!-- 집가서 매트릭스ver, 평범한 워치화면 도안짜기 -->

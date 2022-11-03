@@ -1,0 +1,14 @@
+/* style.css */
+/* 폰트 : crimson, noto sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* CSS 에서 <외부 style 문서 불러오기> */
+@import "./reset.css";
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+}
